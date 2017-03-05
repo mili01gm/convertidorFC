@@ -7,20 +7,23 @@
   <title>Calculadora F - C</title>
 </head>
 <body>
-  <form class="" action="index.html" method="post">
-    <h1></h1>
-    <table border cellpadding=10 cellspacing=0>
+
+  <form class="" action="index.html" method="post" align="center">
+    <h1>Calculadora de Temperatura</h1>
+    <table border cellpadding=15 cellspacing=0 align="center">
       <tr>
         <td>Farenheit</td>
-        <td><input type="text" id="farenheit"></td>
-        <td><button type="button" onclick="convCelsius(); return false">a Celsius</button></td>
+        <td><input type="text" pattern="[0-9]\d{1,}" id="farenheit"></td>
+        <td><input type="button" id="botonC" value="a Celsius"></td>
       </tr>
       <tr>
         <td>Celsius</td>
-        <td><input type="text" id="celsius"></td>
-        <td><button type="button" onclick="convFarenheit(); return false">a Farenheit</button></td>
+        <td><input type="text" pattern="[0-9]\d{1,}" id="celsius"></td>
+        <td><input type="button" id="botonF" value="a Farenheit"></td>
       </tr>
-    </table>
+    </table><br>
+    <button type="reset" value="Reset">Nuevo cálculo</button>
   </form>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
